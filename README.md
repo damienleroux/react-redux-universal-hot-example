@@ -12,7 +12,7 @@
 ## About
 Test React Redux Universal Hot Example with react-i18next through url **http://localhost:3000/?lng=ko** or  **http://localhost:3000/?lng=ko** after having launched `npm run dev`.
 
-I used what [simpleblack](https://github.com/simpleblack/react-redux-universal-hot-example) did on the same original repo but with more recent version of react-redux-universal-hot-example (0.9.0). Thank to him!
+I used what [simpleblack](https://github.com/simpleblack/react-redux-universal-hot-example) did on the same original repo. Thank to him!
 
 This is a starter boilerplate app I've put together using the following technologies:
 
