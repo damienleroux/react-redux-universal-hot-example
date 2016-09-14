@@ -1,4 +1,4 @@
-# React Redux Universal Hot Example
+# React Redux Universal Hot Example with react-i18next
 
 [![build status](https://img.shields.io/travis/erikras/react-redux-universal-hot-example/master.svg?style=flat-square)](https://travis-ci.org/erikras/react-redux-universal-hot-example)
 [![Dependency Status](https://david-dm.org/erikras/react-redux-universal-hot-example.svg?style=flat-square)](https://david-dm.org/erikras/react-redux-universal-hot-example)
@@ -10,6 +10,9 @@
 ---
 
 ## About
+Test React Redux Universal Hot Example with react-i18next through url **http://localhost:3000/?lng=ko** or  **http://localhost:3000/?lng=ko** after having launched `npm run dev`.
+
+I used what [simpleblack](https://github.com/simpleblack/react-redux-universal-hot-example) did on the same original repo but with more recent version of react-redux-universal-hot-example (0.9.0). Thank to him!
 
 This is a starter boilerplate app I've put together using the following technologies:
 
@@ -107,6 +110,7 @@ We also spit out the `redux` state into a global `window.__data` variable in the
 
 #### Server-side Data Fetching
 
+The [redux-async-connect](https://www.npmjs.com/package/redux-async-connect) package exposes an API to return promises that need to be fulfilled before a route is rendered. It exposes a `<ReduxAsyncConnect />` container, which wraps our render tree on both [server](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/server.js) and [client](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/client.js). More documentation is available on the [redux-async-connect](https://www.npmjs.com/package/redux-async-connect) page.
 We ask `react-router` for a list of all the routes that match the current request and we check to see if any of the matched routes has a static `fetchData()` function. If it does, we pass the redux dispatcher to it and collect the promises returned. Those promises will be resolved when each matching route has loaded its necessary data from the API server.
 
 #### Client Side
