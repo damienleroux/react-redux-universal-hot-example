@@ -1,0 +1,15 @@
+{
+  "content": {
+    "text": "React Redux i18n Example"
+  },
+  "language":"Language",
+  "navigation":{
+    "cryoevolution": "Cryo Evolution",
+    "cryotherapie": "Cryotherapy Center",
+    "sport": "Sport Center",
+    "spa": "SPA wellness Center",
+    "beaute": "Beauty Institute",
+    "contact": "Contact",
+    "propos": "About"
+  }
+}
