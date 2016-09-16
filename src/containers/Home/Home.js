@@ -5,8 +5,7 @@ import config from '../../config';
 import Helmet from 'react-helmet';
 import { translate } from 'react-i18next';
 
-@translate(['common'])
-export default class Home extends Component {
+class Home extends Component {
   static propTypes = {
     t: PropTypes.func,
   }
@@ -180,3 +179,6 @@ export default class Home extends Component {
     );
   }
 }
+
+
+export default translate(['common'])(Home);
